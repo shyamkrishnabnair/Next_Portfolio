@@ -43,12 +43,12 @@ interface ContactLink {
 }
 
 const ContactSection: React.FC = () => (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-24 bg-gray">
         <div className="container mx-auto px-6 max-w-5xl">
-            <h2 className="text-4xl font-extrabold text-center mb-4 text-gray-900">
+            <h2 className="text-4xl font-extrabold text-center mb-4 text-blue-400">
                 Get In Touch
             </h2>
-            <p className="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            <p className="text-xl text-center text-white mb-16 max-w-2xl mx-auto">
                 I'm currently seeking new opportunities. Feel free to connect or drop me an email!
             </p>
 

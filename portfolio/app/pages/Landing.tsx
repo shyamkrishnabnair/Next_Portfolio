@@ -5,15 +5,15 @@ const Landing = () => (
         className="min-h-screen pt-20 flex items-center justify-center" 
     >
         <div className="container mx-auto px-6 text-center py-24">
-            <p className="text-6xl font-medium text-slate-600 mb-4 sm:text-2xl">
+            <p className="text-6xl font-black text-white mb-4 sm:text-2xl">
                 SHYAMKRISHNA B NAIR 
             </p>
             {/* Responsive Headline using fluid font sizes */}
-            <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mb-6 
+            <h1 className="text-6xl font-bold tracking-tighter text-white mb-6 
                            sm:text-7xl lg:text-8xl leading-tight">
-                I <span className="text-blue-600 font-extrabold">Design</span> , <span className="text-blue-600 font-extrabold">Edit</span> & <span className="text-blue-600 font-extrabold">Code</span> stuff.
+                I <span className="text-blue-400 font-extrabold">Design</span> , <span className="text-blue-400 font-extrabold">Edit</span> & <span className="text-blue-400 font-extrabold">Code</span> stuff.
             </h1>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10 sm:text-xl">
+            <p className="text-lg text-white max-w-3xl mx-auto mb-10 sm:text-xl">
                 I'm a final-year Data Science undergrad and creative developer who loves building things that blend design and engineering seamlessly.
             </p>
             {/* Call to Action Button */}

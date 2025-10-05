@@ -28,13 +28,13 @@ const Navbar = () => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-            ${isScrolled ? 'bg-white/90 shadow-md backdrop-blur-sm' : 'bg-transparent'}
+            ${isScrolled ? 'bg-gray/55 shadow-md backdrop-blur-sm' : 'bg-transparent'}
             `}
         >
             <div className="container mx-auto flex h-15 items-center justify-between px-2 sm:px-6 lg:px-2">
         
         {/* Right Aligned: Creative Developer Title */}
-            <div className="text-xl font-extrabold tracking-tight text-gray-900 transition-colors duration-300 hover:text-indigo-600 sm:text-2xl">
+            <div className="text-xl font-extrabold tracking-tight text-white transition-colors duration-300 hover:text-indigo-600 sm:text-2xl">
             Creative Developer
             </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-medium text-gray-600 transition duration-150 hover:text-indigo-600 hover:underline underline-offset-4"
+                className="text-lg font-medium text-white transition duration-150 hover:text-indigo-600 hover:underline underline-offset-4"
                 >
                 {link.name}
                 </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
             {/* MOBILE MENU BUTTON */}
             <button
-            className="md:hidden p-2 rounded-full text-gray-700 hover:bg-gray-100 transition"
+            className="md:hidden p-2 rounded-full text-white hover:bg-gray-100 transition"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation menu"
             >
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-gray-700 p-2 rounded-lg hover:bg-indigo-50 hover:text-indigo-600 transition"
+                className="text-base font-medium text-white p-2 rounded-lg hover:bg-indigo-50 hover:text-indigo-600 transition"
                 onClick={() => setIsMenuOpen(false)} 
                 >
                 {link.name}
