@@ -53,14 +53,6 @@ const contactLinks: ContactLink[] = [
 ];
 
 
-interface ContactLink {
-  name: string;
-  href: string;
-  // FIX: Using React.ComponentType<any> allows the component to accept arbitrary props like 'size'.
-  icon: React.ComponentType<any>; 
-  color: string; // Tailwind color class for hover effect
-}
-
 const ContactSection: React.FC = () => (
     <section id="contact" className="py-24 bg-gray">
         <div className="container mx-auto px-6 max-w-5xl">
