@@ -1,11 +1,33 @@
+interface Skill {
+    section: string;
+    items: string[];
+}
+
 const skills: Skill[] = [
-    { name: 'Next.js', level: 'Advanced' },
-    { name: 'TypeScript', level: 'Advanced' },
-    { name: 'Tailwind CSS', level: 'Expert' },
-    { name: 'React', level: 'Advanced' },
-    { name: 'Firebase/Firestore', level: 'Intermediate' },
-    { name: 'Node.js/Express', level: 'Intermediate' },
-    { name: 'UI/UX Design', level: 'Proficient' },
+    {
+        section: 'Programming Languages',
+        items: ['Python', 'C', 'Java'],
+    },
+    {
+        section: 'Frontend',
+        items: ['ReactJS', 'Next.js', 'TypeScript', 'Tailwind CSS','JavaScript', 'HTML5', 'CSS3',],
+    },
+    {
+        section: 'Backend',
+        items: ['Node.js', 'Express.js', 'REST APIs', 'Flask', "Django"],
+    },
+    {
+        section: 'Databases',
+        items: ['MySQL', 'MongoDB'],
+    },
+    {
+        section: 'Version Control & Deployment',
+        items: ['Git', 'GitHub', 'Vercel', 'Render', 'GitHub Pages'],
+    },
+    {
+        section: 'Design Tools',
+        items: ['Adobe Illustrator', 'Figma', 'After Effects', 'InDesign'],
+    },
 ];
 
 
@@ -21,7 +43,7 @@ const About: React.FC = () => (
                 {/* Column 1: Avatar and Contact Button */}
                 <div className="md:col-span-1 flex flex-col items-center">
                     {/* Placeholder Avatar - replace with your image URL */}
-                    <div className="w-60 h-60 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
+                    <div className="w-60 h-60 rounded-2xl overflow-hidden mb-6 border-4 border-white shadow-lg">
                         <img 
                             src="/profile.jpg" 
                             alt="Profile" 
@@ -29,15 +51,7 @@ const About: React.FC = () => (
                         />
                     </div>
                     
-                    <a 
-                        href="https://drive.google.com/file/d/1gOodx219Xty3V_v1SOLs3HwCC_JFGHCn/view?usp=drive_link" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full text-center px-6 py-3 border border-indigo-600 text-base font-medium 
-                                   rounded-xl text-indigo-400 bg-gray-900 hover:bg-indigo-900 transition duration-200 shadow-md"
-                    >
-                        Download Resume
-                    </a>
+                    
                 </div>
 
                 {/* Column 2 & 3 (Desktop): Bio Text and Experience */}
@@ -50,6 +64,15 @@ const About: React.FC = () => (
                         <p>
                             Drawing inspiration from Leonardo da Vinci’s timeless curiosity and Lewis Hamilton’s relentless pursuit of perfection, I aim to build digital products that are thoughtful, impactful, and ahead of their time.
                         </p>
+                        <a 
+                        href="https://drive.google.com/file/d/1gOodx219Xty3V_v1SOLs3HwCC_JFGHCn/view?usp=drive_link" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-50 inline-flex items-center justify-center border border-indigo-600 font-medium
+                                   rounded text-white bg-indigo-600 hover:bg-indigo-700 transition duration-200 shadow-md"
+                    >
+                        Download Resume
+                    </a>
                     </div>
 
                     {/* Skill Badges List */}
@@ -57,16 +80,35 @@ const About: React.FC = () => (
                         <h3 className="text-2xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">
                             Core Technologies
                         </h3>
-                        <div className="flex flex-wrap gap-3">
-                            {skills.map((skill) => (
-                                <span 
-                                    key={skill.name} 
-                                    className="px-4 py-1.5 text-sm font-medium rounded-full 
-                                               bg-indigo-900 text-indigo-200 border border-indigo-700 shadow-md"
-                                >
-                                    {skill.name}
-                                </span>
-                            ))}
+                        
+                        {/* Iterate over skill sections */}
+                        <div className="space-y-8"> 
+                            {skills.map((skillGroup) => { // FIX: Changed from implicit return (=> () to explicit return (=> {})
+                                return (
+                                    <div 
+                                        key={skillGroup.section} 
+                                        className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 items-start pb-4 border-b border-gray-800 last:border-b-0"
+                                    >
+                                        {/* Section Name (1/4 column on desktop) */}
+                                        <h4 className="text-xl font-medium text-white md:col-span-1 pt-1">
+                                            {skillGroup.section}
+                                        </h4>
+                                        
+                                        {/* Items (3/4 columns on desktop) */}
+                                        <div className="flex flex-wrap gap-3 md:col-span-3 items-center">
+                                            {skillGroup.items.map((item) => (
+                                                <span 
+                                                    key={item} 
+                                                    className="px-4 py-1.5 text-sm font-medium rounded-full 
+                                                               bg-indigo-900 text-indigo-100 border border-indigo-700 shadow-md"
+                                                >
+                                                    {item}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

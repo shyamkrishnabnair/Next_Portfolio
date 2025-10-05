@@ -5,6 +5,7 @@ import Landing from "./pages/Landing";
 import ContactSection from "./pages/Contact";
 import FadeInOnScroll from "./components/FadeInOnScroll";
 import About from "./pages/About";
+import WorksSection from "./pages/WorkSection";
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
       <Landing />
       <FadeInOnScroll>
             <About />
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+            <WorksSection />
       </FadeInOnScroll>
       <FadeInOnScroll>
             <ContactSection />
