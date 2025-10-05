@@ -5,7 +5,7 @@ const Landing = () => (
         className="min-h-screen pt-20 flex items-center justify-center" 
     >
         <div className="container mx-auto px-6 text-center py-24">
-            <p className="text-6xl font-black text-white mb-4 sm:text-2xl">
+            <p className="text-2xl font-black text-white mb-4 sm:text-6xl">
                 SHYAMKRISHNA B NAIR 
             </p>
             {/* Responsive Headline using fluid font sizes */}
