@@ -59,16 +59,16 @@ const ContactSection: React.FC = () => (
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-col items-center justify-center p-4 rounded-xl border border-gray-200 bg-white 
+                        className="flex flex-col items-center justify-center p-4 rounded-xl border border-blue-400 bg-black-400 
                                    shadow-md transition-all duration-300 hover:shadow-xl transform hover:scale-[1.03]
                                    group"
                     >
                         <link.icon 
                             size={32} 
-                            className={`text-gray-500 transition-colors duration-300 group-hover:scale-110 ${link.color}`} 
+                            className={`text-white transition-colors duration-300 group-hover:scale-110 ${link.color}`} 
                             style={{ width: '32px', height: '32px' }}
                         />
-                        <span className={`mt-3 text-lg font-semibold text-gray-700 transition-colors duration-300 ${link.color}`}>
+                        <span className={`mt-3 text-lg font-semibold text-white transition-colors duration-300 ${link.color}`}>
                             {link.name}
                         </span>
                     </a>
