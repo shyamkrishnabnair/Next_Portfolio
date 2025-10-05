@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const dummyDesigns: string[] = [
     "/Poster_3.png",
     "/Poster_1.jpg",
@@ -19,9 +21,11 @@ const WorkDesigns: React.FC = () => (
                     className="mb-6 break-inside-avoid-column rounded-xl overflow-hidden border border-gray-700 shadow-xl 
                                transition-transform duration-300 hover:scale-[1.01] cursor-pointer"
                 >
-                    <img 
+                    <Image 
                         src={src} 
                         alt={`Design piece ${index + 1}`} 
+                        width={300}
+                        height={300}
                         className="w-full h-auto object-cover" 
                         onError={(e) => {
                             (e.target as HTMLImageElement).onerror = null; 
