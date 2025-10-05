@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="container mx-auto flex h-15 items-center justify-between px-2 sm:px-6 lg:px-2">
         
         {/* Right Aligned: Creative Developer Title */}
-            <div className="text-xl font-extrabold tracking-tight text-white transition-colors duration-300 hover:text-indigo-600 sm:text-2xl">
+            <div className="text-xl font-medium tracking-tight text-white transition-colors duration-300 hover:text-indigo-600 sm:text-2xl">
             Creative Developer
             </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-medium text-white transition duration-150 hover:text-indigo-600 hover:underline underline-offset-4"
+                className="text-lg font-normal text-white transition duration-150 hover:text-indigo-600 hover:underline underline-offset-4"
                 >
                 {link.name}
                 </a>

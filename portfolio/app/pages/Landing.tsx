@@ -20,7 +20,7 @@ const Landing = () => (
             <a 
                 href="#works" 
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium 
-                           rounded-full shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 
+                           rounded shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 
                            hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] sm:text-lg"
             >
                 Check out my Works
