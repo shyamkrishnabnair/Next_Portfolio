@@ -1,15 +1,12 @@
 "use client";
 import Navbar from "./components/Navbar";
+import Landing from "./pages/Landing";
 
 export default function App() {
   return (
-    <div className="font-sans antialiased text-gray-900 bg-gray-50 min-h-[200vh]">
+    <div className="font-serif antialiased text-gray-900 bg-gray-50 min-h-[200vh]">
       <Navbar />
-      
-      {/* Spacer to push content down and show the scroll effect */}
-      <div className="pt-20 text-center text-gray-500">
-        <p>Scroll down to test the translucent navbar!</p>
-      </div>
+      <Landing />
     </div>
   );
 }
