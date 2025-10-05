@@ -1,5 +1,13 @@
 import { Menu, X, Github, Linkedin, Instagram, Code, Mail } from 'lucide-react'; 
 
+interface ContactLink {
+  name: string;
+  href: string;
+  // Using the new specific type to satisfy the linter
+  icon: React.ComponentType<any>; 
+  color: string; // Tailwind color class for hover effect
+}
+
 const contactLinks: ContactLink[] = [
     { 
         name: 'Email', 
