@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Skill {
     section: string;
     items: string[];
@@ -44,9 +46,11 @@ const About: React.FC = () => (
                 <div className="md:col-span-1 flex flex-col items-center">
                     {/* Placeholder Avatar - replace with your image URL */}
                     <div className="w-60 h-60 rounded-2xl overflow-hidden mb-6 border-4 border-white shadow-lg">
-                        <img 
+                        <Image 
                             src="/profile.jpg" 
                             alt="Profile" 
+                            width={300}
+                            height={300}
                             className="w-full h-full object-cover"
                         />
                     </div>

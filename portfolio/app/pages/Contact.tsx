@@ -1,4 +1,4 @@
-import { Menu, X, Github, Linkedin, Instagram, Code, Mail } from 'lucide-react'; 
+import { Github, Linkedin, Instagram, Code, Mail } from 'lucide-react'; 
 
 interface ContactLink {
   name: string;

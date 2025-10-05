@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const ProjectCarousel: React.FC<{ images: string[] }> = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,9 +24,11 @@ const ProjectCarousel: React.FC<{ images: string[] }> = ({ images }) => {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
                 {images.map((imgSrc, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={imgSrc}
+                        width={300}
+                        height={300}
                         alt={`Project screenshot ${index + 1}`}
                         className="w-full h-full object-cover flex-shrink-0"
                         // Fallback image in case the placeholder URL doesn't load
