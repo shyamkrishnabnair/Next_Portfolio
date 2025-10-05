@@ -13,11 +13,10 @@ interface IconProps {
 interface ContactLink {
   name: string;
   href: string;
-  // FIX: Using an explicit functional component signature (instead of React.ComponentType<IconProps>) 
-  // to resolve the strict 'no-explicit-any' linter rule.
-  icon: (props: IconProps) => JSX.Element; 
-  color: string; // Tailwind color class for hover effect
+  icon: React.FC<IconProps>;  // ✅ simpler & cleaner
+  color: string;
 }
+
 
 const contactLinks: ContactLink[] = [
     { 
