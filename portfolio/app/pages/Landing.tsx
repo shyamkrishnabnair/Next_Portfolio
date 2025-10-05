@@ -14,7 +14,7 @@ const Landing = () => (
                 I <span className="text-blue-400 font-extrabold">Design</span> , <span className="text-blue-400 font-extrabold">Edit</span> & <span className="text-blue-400 font-extrabold">Code</span> stuff.
             </h1>
             <p className="text-lg text-white max-w-3xl mx-auto mb-10 sm:text-xl">
-                I'm a final-year Data Science undergrad and creative developer who loves building things that blend design and engineering seamlessly.
+                I&apos;m a final-year Data Science undergrad and creative developer who loves building things that blend design and engineering seamlessly.
             </p>
             {/* Call to Action Button */}
             <a 

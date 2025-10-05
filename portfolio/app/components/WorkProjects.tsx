@@ -18,8 +18,6 @@ const dummyProjects: Project[] = [
     id: 2,
     title: "AirNotes - Hand Gesture Music Composer",
     images: [
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Hand+Gesture+Music+Player+A",
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Hand+Gesture+Music+Player+B",
     ],
     stack: ["Python", "OpenCV", "Pygame", "Mediapipe"],
     description:
@@ -31,8 +29,6 @@ const dummyProjects: Project[] = [
     id: 3,
     title: "Saarthi – Govt Scheme Recommender",
     images: [
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Saarthi+Scheme+Dashboard",
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Saarthi+Speech+to+AI",
     ],
     stack: ["React+Vite", "TailwindCSS", "Speech-to-Speech", "REST API"],
     description:
@@ -44,8 +40,6 @@ const dummyProjects: Project[] = [
     id: 4,
     title: "Traveloop-Travel Itinerary Generator",
     images: [
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Travel+Itinerary+UI",
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Spark+Workflow",
     ],
     stack: ["Python", "Hadoop", "Apache Spark", "Flask"],
     description:
@@ -57,8 +51,6 @@ const dummyProjects: Project[] = [
     id: 5,
     title: "Endxiety-Mental Wellness Chatbot",
     images: [
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Chatbot+Interface",
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Mistral+AI+Response",
     ],
     stack: ["Python", "Streamlit", "Llama"],
     description:
@@ -70,8 +62,6 @@ const dummyProjects: Project[] = [
     id: 6,
     title: "Skill Matrix - E Learning Hub",
     images: [
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=E-Learning+Dashboard",
-      "https://placehold.co/600x400/FF4500/FFFFFF/png?text=Course+Page",
     ],
     stack: ["React", "Django REST", "MongoDB"],
     description:

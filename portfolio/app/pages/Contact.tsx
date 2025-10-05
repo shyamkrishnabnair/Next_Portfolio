@@ -1,10 +1,21 @@
 import { Github, Linkedin, Instagram, Code, Mail } from 'lucide-react'; 
 
+interface IconProps {
+    size?: number;
+    className?: string;
+    style?: React.CSSProperties;
+    // We include standard SVG element props to avoid using 'any' explicitly
+    'aria-label'?: string;
+    onClick?: () => void;
+    
+}
+
 interface ContactLink {
   name: string;
   href: string;
-  // Using the new specific type to satisfy the linter
-  icon: React.ComponentType<any>; 
+  // FIX: Using an explicit functional component signature (instead of React.ComponentType<IconProps>) 
+  // to resolve the strict 'no-explicit-any' linter rule.
+  icon: (props: IconProps) => JSX.Element; 
   color: string; // Tailwind color class for hover effect
 }
 
@@ -57,7 +68,7 @@ const ContactSection: React.FC = () => (
                 Get In Touch
             </h2>
             <p className="text-xl text-center text-white mb-16 max-w-2xl mx-auto">
-                I'm currently seeking new opportunities. Feel free to connect or drop me an email!
+                I&apos;m currently seeking new opportunities. Feel free to connect or drop me an email!
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">

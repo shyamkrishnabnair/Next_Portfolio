@@ -63,10 +63,10 @@ const About: React.FC = () => (
                     {/* Bio Paragraphs */}
                     <div className="space-y-4 text-gray-300 text-lg">
                         <p>
-                            I see technology as both an art and a science — a canvas for imagination and a tool for precision. As a final-year Data Science undergrad and Creative Developer, I’m driven by curiosity and passion to craft experiences that merge creativity with logic. 
+                            I see technology as both an art and a science — a canvas for imagination and a tool for precision. As a final-year Data Science undergrad and Creative Developer, I&apos;m driven by curiosity and passion to craft experiences that merge creativity with logic. 
                         </p>
                         <p>
-                            Drawing inspiration from Leonardo da Vinci’s timeless curiosity and Lewis Hamilton’s relentless pursuit of perfection, I aim to build digital products that are thoughtful, impactful, and ahead of their time.
+                            Drawing inspiration from Leonardo da Vinci&apos;s timeless curiosity and Lewis Hamilton&apos;s relentless pursuit of perfection, I aim to build digital products that are thoughtful, impactful, and ahead of their time.
                         </p>
                         <a 
                         href="https://drive.google.com/file/d/1gOodx219Xty3V_v1SOLs3HwCC_JFGHCn/view?usp=drive_link" 
