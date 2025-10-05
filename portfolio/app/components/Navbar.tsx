@@ -67,7 +67,7 @@ const Navbar = () => {
             ${isMenuOpen ? 'max-h-60' : 'max-h-0'}
             `}
         >
-            <nav className="flex flex-col space-y-3 p-4 border-t border-gray-100 bg-white shadow-lg">
+            <nav className="flex flex-col space-y-3 p-4 border-t border-gray-50 bg-gray/55 backdrop-blur-sm shadow-lg transition-all duration-300">
             {navLinks.map((link) => (
                 <a
                 key={link.name}
