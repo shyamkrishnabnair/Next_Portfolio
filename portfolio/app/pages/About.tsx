@@ -35,7 +35,7 @@ const skills: Skill[] = [
 
 
 const About: React.FC = () => (
-    <section id="about" className="py-24 bg-gray-950">
+    <section id="about" className="py-24 bg-gray-950/20 border-t border-gray-800">
         <div className="container mx-auto px-6">
             <h2 className="text-4xl font-extrabold text-center mb-16 text-white">
                 About Me

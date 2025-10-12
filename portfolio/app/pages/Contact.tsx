@@ -33,7 +33,7 @@ const contactLinks: ContactLink[] = [
     },
     { 
         name: 'LinkedIn', 
-        href: 'https://linkedin.com/in/shyamkrshnabnair', 
+        href: 'https://linkedin.com/in/shyamkrishnabnair', 
         icon: Linkedin, 
         color: 'hover:text-blue-700' // LinkedIn Blue
     },
@@ -45,7 +45,7 @@ const contactLinks: ContactLink[] = [
     },
     { 
         name: 'LeetCode', 
-        href: 'https://leetcode.com/shyamkrishnabnair', 
+        href: 'https://leetcode.com/u/TJ0qdRpATR/', 
         icon: Code, // Using a generic Code icon from Lucide
         color: 'hover:text-yellow-600' // LeetCode Yellow/Orange
     },

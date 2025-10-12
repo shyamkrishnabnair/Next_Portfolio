@@ -21,9 +21,8 @@ const dummyProjects: Project[] = [
     ],
     stack: ["Python", "OpenCV", "Pygame", "Mediapipe"],
     description:
-      "A real-time hand gesture recognition system that controls music playback using computer vision. Features dynamic gesture detection and a symbolic notation system for musical interactions.",
-    liveLink: "#",
-    githubLink: "#",
+      "A real-time hand gesture recognition system that controls music playback using computer vision. Features dynamic gesture detection and a symbolic notation system for musical interactions.",  
+    githubLink: "https://github.com/shyamkrishnabnair/hand-gesture-recognition-mediapipe-main",
   },
   {
     id: 3,
@@ -33,8 +32,8 @@ const dummyProjects: Project[] = [
     stack: ["React+Vite", "TailwindCSS", "Speech-to-Speech", "REST API"],
     description:
       "A one-stop platform for discovering Karnataka Government welfare schemes using AI-driven recommendations and voice-based search. Includes complaint filing and dashboard features.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://saarthi-ai-one.vercel.app/",
+    githubLink: "https://github.com/Sarthi-AI/saarthi-ai",
   },
   {
     id: 4,
@@ -44,8 +43,7 @@ const dummyProjects: Project[] = [
     stack: ["Python", "Hadoop", "Apache Spark", "Flask"],
     description:
       "A big data application leveraging Spark and Hadoop to analyze travel datasets and generate optimized itineraries based on user preferences and location analytics.",
-    liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/shyamkrishnabnair/Traveloop",
   },
   {
     id: 5,
@@ -55,8 +53,8 @@ const dummyProjects: Project[] = [
     stack: ["Python", "Streamlit", "Llama"],
     description:
       "An AI-powered mental wellness chatbot that provides supportive, positive interactions using local LLMs. Designed with a minimal UI for smooth, private conversations.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://emo-son-ai.vercel.app/",
+    githubLink: "https://github.com/shyamkrishnabnair/Endxiety-ChatBot",
   },
   {
     id: 6,
@@ -66,8 +64,18 @@ const dummyProjects: Project[] = [
     stack: ["React", "Django REST", "MongoDB"],
     description:
       "A full-stack e-learning platform featuring authentication, course management, dashboards, reviews, and responsive UI. Includes optional gamification, forums, and live classes.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://skillmatrix-beta.vercel.app/",
+    githubLink: "https://github.com/SkillMatrix-io/skillmatrix",
+  },
+  {
+    id: 7,
+    title: "BlindGuide - Object Detection with Speech and Directional Feedback",
+    images: [
+    ],
+    stack: ["Python", "OpenCV", "YOLO v5"],
+    description:
+      "An object detection system with audio and directional feedback. It uses a YOLOv5 model to detect objects in real-time via a webcam, providing spoken alerts about detected objects and their positions.",
+    githubLink: "https://github.com/SkillMatrix-io/skillmatrix",
   },
 ];
 
